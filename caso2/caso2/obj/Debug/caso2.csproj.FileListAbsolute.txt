@@ -1,0 +1,11 @@
+C:\Users\kalue\source\repos\caso2\caso2\bin\Debug\caso2.exe.config
+C:\Users\kalue\source\repos\caso2\caso2\bin\Debug\caso2.exe
+C:\Users\kalue\source\repos\caso2\caso2\bin\Debug\caso2.pdb
+C:\Users\kalue\source\repos\caso2\caso2\obj\Debug\caso2.csproj.AssemblyReference.cache
+C:\Users\kalue\source\repos\caso2\caso2\obj\Debug\caso2.csproj.SuggestedBindingRedirects.cache
+C:\Users\kalue\source\repos\caso2\caso2\obj\Debug\caso2.Form1.resources
+C:\Users\kalue\source\repos\caso2\caso2\obj\Debug\caso2.Properties.Resources.resources
+C:\Users\kalue\source\repos\caso2\caso2\obj\Debug\caso2.csproj.GenerateResource.cache
+C:\Users\kalue\source\repos\caso2\caso2\obj\Debug\caso2.csproj.CoreCompileInputs.cache
+C:\Users\kalue\source\repos\caso2\caso2\obj\Debug\caso2.exe
+C:\Users\kalue\source\repos\caso2\caso2\obj\Debug\caso2.pdb
