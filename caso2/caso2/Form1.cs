@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,20 +21,20 @@ namespace caso2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Deshabilitar el botón mientras se realiza la consulta
+            
             button1.Enabled = false;
 
-            // Crear un hilo para ejecutar la consulta
+            
             Thread Thread = new Thread(Consulta);
             Thread.Start();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Deshabilitar el botón mientras se realiza la consulta
+         
             button2.Enabled = false;
 
-            // Crear un hilo para ejecutar la consulta
+          
             Thread Thread2 = new Thread(Diferencia);
             Thread2.Start();
         }
@@ -52,7 +52,7 @@ namespace caso2
                 SqlDataAdapter adap = new SqlDataAdapter(cmd);
                 DataTable dataTab = new DataTable();
 
-                // Agregar una columna de contador para saber el numero de renglones
+
                 dataTab.Columns.Add("No.Renglon", typeof(int));
                 adap.Fill(dataTab);
                 for (int i = 0; i < dataTab.Rows.Count; i++)
@@ -60,10 +60,10 @@ namespace caso2
                     dataTab.Rows[i]["No.Renglon"] = i + 1;
                 }
 
-                // Reorganizar las columnas para colocar "No.Renglon" al principio
+               
                 dataTab.Columns["No.Renglon"].SetOrdinal(0);
 
-                // Asignar los resultados al DataGridView
+         
                 dataGridView2.Invoke(new Action(() => dataGridView2.DataSource = dataTab));
             }
             catch (Exception ex)
@@ -72,7 +72,7 @@ namespace caso2
             }
             finally
             {
-                // Habilitar el botón después de completar la consulta
+               
                 button2.Invoke(new Action(() => button2.Enabled = true));
 
                 conexion.Close();
@@ -139,6 +139,8 @@ namespace caso2
 
     }
 }
+
+
 
 
 
